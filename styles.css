@@ -1,0 +1,46 @@
+/* Simple responsive styles for the dummy website */
+:root{
+  --accent:#0066ff;
+  --bg:#f7f9fc;
+  --text:#0b2545;
+  --muted:#6b7b8f;
+  --radius:8px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.5;
+}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+.site-header{background:#fff;box-shadow:0 1px 4px rgba(11,37,69,0.06)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem}
+.logo{font-weight:700;color:var(--accent);text-decoration:none;font-size:1.25rem}
+#nav-toggle{display:none;background:transparent;border:none;font-size:1.25rem}
+.site-nav a{margin-left:1rem;color:var(--muted);text-decoration:none}
+.hero{padding:4rem 0;text-align:center;background:linear-gradient(90deg, rgba(0,102,255,0.06), rgba(0,102,255,0.02))}
+.hero h1{margin:0;font-size:2rem}
+.btn{display:inline-block;margin-top:1rem;padding:0.6rem 1rem;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 18px rgba(11,37,69,0.06)}
+.card img{width:100%;display:block}
+.card h3{margin:0;padding:1rem}
+.card p{padding:0 1rem 1rem;color:var(--muted)}
+.about{margin-top:2rem;background:#fff;padding:1rem;border-radius:8px}
+.contact{margin-top:2rem;background:#fff;padding:1rem;border-radius:8px}
+.contact label{display:block;margin-bottom:0.75rem;color:var(--muted)}
+.contact input,.contact textarea{width:100%;padding:0.6rem;border:1px solid #e6eef8;border-radius:6px}
+.form-msg{margin-top:0.6rem;color:green}
+.site-footer{padding:1rem 0;margin-top:2rem;text-align:center;color:var(--muted)}
+
+/* Responsive */
+@media (max-width:800px){
+  .features{grid-template-columns:1fr}
+  #nav-toggle{display:block}
+  .site-nav{display:none;width:100%;margin-top:0.5rem}
+  .site-nav a{display:block;padding:0.5rem 0}
+}
+#site-nav.show{display:block}

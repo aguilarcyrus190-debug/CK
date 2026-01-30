@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dummy Website — CK</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">CK</a>
+      <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Dummy Website</h1>
+        <p>A small, responsive demo site you can use as a starter.</p>
+        <a class="btn" href="#features">Explore Features</a>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <article class="card">
+        <img src="https://via.placeholder.com/600x320" alt="Placeholder">
+        <h3>Easy to Customize</h3>
+        <p>Replace text, images, and styles to match your project.</p>
+      </article>
+
+      <article class="card">
+        <img src="https://via.placeholder.com/600x320" alt="Placeholder">
+        <h3>Responsive</h3>
+        <p>Looks good on phones, tablets, and desktop screens.</p>
+      </article>
+
+      <article class="card">
+        <img src="https://via.placeholder.com/600x320" alt="Placeholder">
+        <h3>Lightweight</h3>
+        <p>No build tools required — just static files.</p>
+      </article>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About This Demo</h2>
+      <p>This dummy website is intended as a minimal, clear starting point for small projects, experiments, or teaching examples.</p>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="form-msg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2026 CK — Dummy Website</small>
+    </div>
+  </footer>
+</body>
+</html>
